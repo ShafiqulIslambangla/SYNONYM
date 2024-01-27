@@ -1,2 +1,3 @@
-=================================ALL USER==============SELECT 
+=================================ALL USER==============
+
 SELECT 'CREATE OR REPLACE SYNONYM ' ||USER_NAME||'.LOAN_BAL_MNYR_MRA_SAMITY_TYPE FOR LOAN_BAL_MNYR_MRA_SAMITY_TYPE;'FROM  V$USER
