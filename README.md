@@ -8,3 +8,11 @@ grant select update delete  on table to user
 procedure/ function ///grant execute on (procedure/funcati) to user ()
 grant execute on PKG_VW_PARAM to MIS_OFFICER;
 grant execute on PKG_VW_PARAM to HO_AUDIT_OFFICER;
+
+
+-------------------------------------------
+SELECT 'GRANT SELECT ON '||OBJECT_NAME||'  TO AREA_MIS_OFFICER;' FROM DBA_OBJECTS WHERE OWNER='SHARP' AND  OBJECT_TYPE IN ('TABLE');
+
+SELECT 'GRANT SELECT ON '||OBJECT_NAME||'  TO AREA_MIS_OFFICER;' FROM DBA_OBJECTS WHERE  OWNER='SHARP' AND OBJECT_TYPE IN ('VIEW');
+
+SELECT 'GRANT EXECUTE ON '||OBJECT_NAME||'  TO AREA_MIS_OFFICER;' FROM DBA_OBJECTS WHERE OWNER='SHARP' AND  OBJECT_TYPE IN ('PROCEDURE','FUNCTION','PACKAGE');
