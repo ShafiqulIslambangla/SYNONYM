@@ -6,6 +6,7 @@ CREATE OR REPLACE SYNONYM HOPEAPX.PKG_VW_PARAM FOR PKG_VW_PARAM;
 
 =====table=====
 grant select update delete  on table to user
+
 ==========================
 procedure/ function ///grant execute on (procedure/funcati) to user ()
 grant execute on PKG_VW_PARAM to MIS_OFFICER;
