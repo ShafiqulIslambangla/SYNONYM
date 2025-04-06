@@ -1,3 +1,10 @@
+====================================JASPER================
+"STORE " + "<br/>" + 
+"<span style='color:#116393;'>Requisition For </span>" + 
+"<span style='color:red;'>" + 
+$F{COMPANY_NAME} == null || $F{COMPANY_NAME}.toString().trim().isEmpty()? "Consolidated" : $F{COMPANY_NAME}+
+"</span>"
+=============================================================
 CREATE USER SOHELRANA
   IDENTIFIED BY SOHELRANA
   DEFAULT TABLESPACE DATA_TS
